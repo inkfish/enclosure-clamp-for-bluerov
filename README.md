@@ -1,5 +1,7 @@
 # Parametric Model of Blue Robotics Enclosure Clamp
 
+<img src="./misc/hero.png">
+
 This repository contains a parametric OpenSCAD model for the [Blue Robotics Enclosure Clamp][store] used with their line of Watertight Enclosures.
 
 This model is based on the CAD models released by Blue Robotics and available on the [product page][store] and as a [3D printable model][printable], licensed [CC BY 4.0][license].
