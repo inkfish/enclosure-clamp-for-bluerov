@@ -5,6 +5,15 @@ This repository contains a parametric OpenSCAD model for the [Blue Robotics Encl
 This model is based on the CAD models released by Blue Robotics and available on the [product page][store] and as a [3D printable model][printable], licensed [CC BY 4.0][license].
 
 
+## Usage
+
+Clone this repository with submodules:
+
+    git submodule init --update
+
+Use OpenSCAD to render one of the files `enclosure-clamp-{...}.scad`. Export the rendering as an STL file and 3D print.
+
+
 ## Variant Notes
 
 ### 2" (50mm) series
