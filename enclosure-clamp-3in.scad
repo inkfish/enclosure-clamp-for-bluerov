@@ -21,4 +21,11 @@ base_hole_depth = 5.50;
 flange_hole_diameter = 2.50;  // M3x12
 
 
+// The circle is centered 1.00 mm above the X axis. This detail is not
+// captured in the mechanical drawing but has been confirmed by Blue Robotics:
+//
+// https://discuss.bluerobotics.com/t/small-offset-in-mounting-clamp/15944/2
+circle_y_offset = 1.00;
+
+
 include <clamp.scad>;
