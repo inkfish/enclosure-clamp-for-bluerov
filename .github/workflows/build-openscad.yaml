@@ -1,0 +1,42 @@
+name: Build OpenSCAD Documents
+
+on:
+  push:
+    paths:
+      - '*.scad'
+  pull_request:
+    paths:
+      - '*.scad'
+
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build STL for enclosure-clamp-2in
+        uses: flat35hd99/openscad-actions@v1.4
+        with:
+          scad_file: enclosure-clamp-2in.scad
+          output_file: enclosure-clamp-2in.stl
+
+      - name: Build STL for enclosure-clamp-3in
+        uses: flat35hd99/openscad-actions@v1.4
+        with:
+          scad_file: enclosure-clamp-3in.scad
+          output_file: enclosure-clamp-3in.stl
+
+      - name: Build STL for enclosure-clamp-4in
+        uses: flat35hd99/openscad-actions@v1.4
+        with:
+          scad_file: enclosure-clamp-4in.scad
+          output_file: enclosure-clamp-4in.stl
+
+      - name: Upload STL files
+        uses: actions/upload-artifact@v2
+        with:
+          name: stl-models
+          path: '*.stl'
