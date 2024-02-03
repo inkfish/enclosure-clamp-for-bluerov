@@ -24,8 +24,9 @@ The official 2" series clamp is of slightly different design than the 3" and 4" 
 
 ### 6" and 8" series
 
-There is no first-party enclosure clamp for the 6" and 8" enclosure series.
+There is no first-party enclosure clamp for the 6" and 8" enclosure series. The design file for the 6" series uses dimensions derived from the 4" series. This is a good starting point for other enclosure diameters.
 
+Mounting hardware is the same as for the 3" and 4" series.
 
 
 [license]: https://creativecommons.org/licenses/by/4.0/

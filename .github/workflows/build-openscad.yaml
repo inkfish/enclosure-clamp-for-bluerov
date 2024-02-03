@@ -35,6 +35,12 @@ jobs:
           scad_file: enclosure-clamp-4in.scad
           output_file: enclosure-clamp-4in.stl
 
+      - name: Build STL for enclosure-clamp-6in
+        uses: flat35hd99/openscad-actions@v1.4
+        with:
+          scad_file: enclosure-clamp-6in.scad
+          output_file: enclosure-clamp-6in.stl
+
       - name: Upload STL files
         uses: actions/upload-artifact@v2
         with:
